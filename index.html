@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistem-x</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="menu-login">
+        <div onclick="tools_login_menu()" class="tools-login">
+            <hr class="line-tools-login">
+            <hr class="line-tools-login">
+            <hr class="line-tools-login">
+        </div>
+
+        <section class="tools_login_menu">
+            <div onclick="tools_login_menu_none()" class="login_menu_none"><</div>
+            <ul>
+                <li onclick="register_supervisor()" class="tools_login_menu_line">Cadastrar</li>
+                <li class="tools_login_menu_line">Controle</li>
+                <li class="tools_login_menu_line">Ferramentas</li>
+            </ol>
+        </section>
+
+        <!-- caixas de opçoes do usuario no menu / user checkboxes in the menu -->
+        <section class="menu_checkboxes"> 
+            <!-- user register -->
+            <div class="user_register">
+                <h1 class="new_user">Cadastrar novo usuário</h1>
+
+                <div class="user_register_input">
+                    <input type="text" name="name" id="name_register_user" placeholder="Nome" class="input_user_register">
+
+                    <input type="number" name="id" id="id" placeholder="id" class="input_user_register">
+
+                    <input type="number" name="password" id="password" placeholder="Senha" class="input_user_register">
+
+                </div>
+                <section class="user_register_permission">
+                <h1>Permissões</h1>
+                    <input type="checkbox" name="register_new_user" id="register_new_user">
+                    <label for="register_new_user">Cadastrar novo usuário</label>
+
+                    <br>
+
+                    <input type="checkbox" name="edit_user" id="edit_user">
+                    <label for="edit_user">Editar usuário</label>
+
+                    <br>
+
+                    <input type="checkbox" name="delete_user" id="delete_user">
+                    <label for="delete_user">Excluir usuário</label>
+
+                    <br>
+
+                    <input type="checkbox" name="add_new_customers" id="add_new_customers">
+                    <label for="add_new_customers">Cadastrar novo cliente</label>
+                    
+                    <br>
+
+                    <input type="checkbox" name="edit_customers" id="edit_customers">
+                    <label for="edit_customers">Editar cliente</label>
+
+                    <br>
+
+                    <input type="checkbox" name="delete_customers" id="delete_customers">
+                    <label for="delete_customers">Excluir cliente</label>
+                </section>
+
+                <div class="new_user_buttons">
+                    <input class="new_user_button" type="button" value="Criar">
+                    <input class="new_user_button" type="button" value="Cancelar" onclick="new_user_cancel()">
+                </div>
+            </div>
+        </section>
+
+        <h1 class="supervisor">Supervisor</h1>
+
+        <div class="area-input-login">
+            <input class="input-login" type="number" name="id" id="id" placeholder="id">
+            <input class="input-login" type="number" name="
+            password" id="
+            password" placeholder="senha">
+        </div>
+
+        <input class="button-login" type="button" value="Login">
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
