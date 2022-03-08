@@ -31,15 +31,16 @@
                 <h1 class="new_user">Cadastrar novo usuário</h1>
 
                 <div class="user_register_input">
-                    <input type="text" name="name" id="name_register_user" placeholder="Nome" class="input_user_register">
+                    <input type="text" name="name" id="name_register_supervisor" placeholder="Nome" class="input_user_register">
 
-                    <input type="number" name="id" id="id" placeholder="id" class="input_user_register">
+                    <input type="number" name="id" id="id_register_supervisor" placeholder="id" class="input_user_register">
 
-                    <input type="number" name="password" id="password" placeholder="Senha" class="input_user_register">
+                    <input type="number" name="password" id="password_register_supervisor" placeholder="Senha" class="input_user_register">
 
                 </div>
                 <section class="user_register_permission">
-                <h1>Permissões</h1>
+                    <h1>Permissões</h1>
+
                     <input type="checkbox" name="register_new_user" id="register_new_user">
                     <label for="register_new_user">Cadastrar novo usuário</label>
 
@@ -70,7 +71,7 @@
                 </section>
 
                 <div class="new_user_buttons">
-                    <input class="new_user_button" type="button" value="Criar">
+                    <input onclick="supervisor.generate_supervisor()" class="new_user_button" type="button" value="Criar">
                     <input class="new_user_button" type="button" value="Cancelar" onclick="new_user_cancel()">
                 </div>
             </div>
