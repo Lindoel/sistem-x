@@ -12,9 +12,14 @@
     margin: 0;
 }
 
+body {
+    background-color: var(--color-three);
+}
+
 .menu-login {
-    width: 300px;
-    height: 548px;
+    width: 94vw;
+    min-height: 97vh;
+    max-height: 100vh;
     padding: 10px;
 
     background-image: linear-gradient(to left, var(--color-three), var(--color-two));
@@ -25,16 +30,10 @@
     transform: translate(-50%, -50%);
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 300px) {
-    .menu-login {
-        width: 100vw;
-        height: 100vh;
-    }
 }
 
 .tools-login {
@@ -74,14 +73,14 @@
 .tools_login_menu {
     width: 50%;
     height: 300px;
-    padding: 11.5px;
+    padding-top: 100px;
     border-radius: 0 0 10px 0;
 
     box-shadow: 1px 1px 10px #00000033;
     background-color: var(--six-color);
 
     position: fixed;
-    bottom: 43%;
+    bottom: 50%;
     left: 0%;
 
     transition: all;
@@ -121,7 +120,7 @@
     transition-duration: 300ms;
 
     position: fixed;
-    left: 46%;
+    left: 40%;
 }
 
 .login_menu_none:hover {
@@ -147,7 +146,7 @@
 }
 
 .area-input-login {
-    width: 300px;
+    width: 80%;
     height: 130px;
     padding: 5px;
     border-radius: 0 20px;
@@ -173,6 +172,7 @@
 }
 
 .input-login {
+    margin: auto;
     padding: 5px;
     border-radius: 0 10px;
     outline: 0;
@@ -190,7 +190,7 @@
 }
 
 .button-login {
-    width: 260px;
+    width: 200px;
     padding: 5px;
     border-radius: 5px;
     border: none;
@@ -205,8 +205,8 @@
 }
 
 .button-login:hover {
-    width: 270px;
-    padding: 10px;
+    width: 208px;
+    padding: 8px;
     
     color: var(--color-one);
 
@@ -235,6 +235,7 @@
     background-image: linear-gradient(to left, var(--color-three), var(--color-two));
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -274,7 +275,7 @@
     box-shadow: 1px 1px 10px #00000033;
     background-color: #ffffff1a;
     
-    margin: auto;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
 
