@@ -30,6 +30,13 @@
     align-items: center;
 }
 
+@media (max-width: 300px) {
+    .menu-login {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 .tools-login {
     width: 20px;
     height: 20px;

@@ -12,5 +12,6 @@ function register_supervisor() {
 }
 
 function new_user_cancel() {
-   document.querySelector('.menu_checkboxes').style.display = 'none'
+    document.querySelector('.tools_login_menu').style.display = 'none'
+    document.querySelector('.menu_checkboxes').style.display = 'none'
 }
