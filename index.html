@@ -19,7 +19,7 @@
             <div onclick="tools_login_menu_none()" class="login_menu_none"><</div>
             <ul>
                 <li onclick="register_supervisor()" class="tools_login_menu_line">Cadastrar</li>
-                <li class="tools_login_menu_line">Controle</li>
+                <li onclick="user_table_control()" class="tools_login_menu_line">Controle</li>
                 <li class="tools_login_menu_line">Ferramentas</li>
             </ol>
         </section>
@@ -73,8 +73,30 @@
                 <div class="new_user_buttons">
                     <input onclick="supervisor.generate_supervisor()" class="new_user_button" type="button" value="Criar">
                     <input class="new_user_button" type="button" value="Cancelar" onclick="new_user_cancel()">
-                </div>
+                </div> <!-- user register -->
+
             </div>
+
+            <!-- user table -->
+            <div class="user_table_control">
+                <div class="user_table_c">
+                    <table class="user_table">
+                        <thead>
+                            <td>ID</td>
+                            <td>NOME</td>
+                            <td>SENHA</td>
+                            <td>AÇÃO</td>
+                        </thead>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <input onclick="user_table_display_none()" class="button_table_back" type="button" value="voltar">
+                </div>
+            </div> <!-- user table -->
         </section>
 
         <h1 class="supervisor">Supervisor</h1>

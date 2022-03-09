@@ -10,6 +10,7 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    color: #fff;
 }
 
 
@@ -73,7 +74,7 @@
     border-radius: 0 0 10px 0;
 
     box-shadow: 1px 1px 10px #00000033;
-    background-color: var(--six-color);
+    background-image: linear-gradient(to top, var(--color-three), var(--color-two));
 
     position: fixed;
     bottom: 46%;
@@ -236,6 +237,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .new_user {
@@ -323,4 +325,75 @@
 
 .input_user_register::placeholder {
     color: #f5f5f5;
+}
+
+.user_table_control {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(to left, var(--color-three), var(--color-two));
+    
+    display: none;
+}
+
+.user_table_c {
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 10px #000;
+    background-color: var(--six-color);
+
+    position: fixed;
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    overflow-x: auto;
+}
+
+thead {
+    background-color: #6901FA;
+}
+
+.user_table, thead, td {
+    min-width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-two);
+}
+
+.button_table_back {
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    
+    box-shadow: 1px 1px 10px #ffffff66;
+    color: #f5f5f5;
+    background-color: var(--color-three);
+
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.button_table_back:hover {
+    color: var(--color-one);
+
+    transition: all;
+    transition-duration: 300ms;
 }

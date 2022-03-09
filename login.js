@@ -55,18 +55,12 @@ class Supervisor {
         console.log(this.supervisors)
     }
 
+    add_supervisors_to_table() {
+
+    }
 }
 
 let supervisor = new Supervisor()
-
-
-
-
-
-
-
-
-
 
 
 
@@ -84,9 +78,22 @@ function tools_login_menu_none() {
 
 function register_supervisor() {
     document.querySelector('.menu_checkboxes').style.display = 'block'
+    document.querySelector('.user_register').style.display = 'block'
 }
 
 function new_user_cancel() {
     document.querySelector('.tools_login_menu').style.display = 'none'
     document.querySelector('.menu_checkboxes').style.display = 'none'
+    document.querySelector('.user_register').style.display = 'none'
+}
+
+function user_table_control() {
+    document.querySelector('.menu_checkboxes').style.display = 'block'
+    document.querySelector('.user_table_control').style.display = 'block'
+}
+
+function user_table_display_none() {
+    document.querySelector('.tools_login_menu').style.display = 'none'
+    document.querySelector('.menu_checkboxes').style.display = 'none'
+    document.querySelector('.user_table_control').style.display = 'none'
 }
